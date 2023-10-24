@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./test.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+
+</head>
+
+<body>
+  <div class="background">
+    <div class="boxchat">
+      <div class="iconbox">
+        <div style="display: flex; flex-direction: column;">
+          <div id="sfondoicon"><i id="iconbox" style="margin-top: 23px;" class="bi bi-house"></i></div>
+          <div id="sfondoicon"><i id="iconbox" class="bi bi-people"></i></div>
+          <div id="sfondoicon"><i id="iconbox" style="font-size: 15px;" class="bi bi-calendar4"></i></div>
+          <div id="sfondoicon"><i id="iconbox" style="font-size: 15px;" class="bi bi-chat"></i></div>
+          <div id="sfondoicon"><i id="iconbox" class="bi bi-gear"></i></div>
+        </div>
+        <div style="display: flex;">
+          <div id="sfondoicon"><i id="iconbox" style="font-size: 16px; margin-bottom: 23px;cursor: pointer;"
+              class="bi bi-box-arrow-in-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="chat">
+        <div
+          style="display: flex; flex-direction: column;  width: 26%; border-top-left-radius: 20px;border-bottom-left-radius: 20px;">
+          <div
+            style="display: flex;  border-top-left-radius: 20px; flex: 2; flex-direction: column ;border-right: solid rgba(255, 255, 255, 0.4);border-bottom: solid rgba(255, 255, 255, 0.4); ">
+            <div
+              style="display: flex;justify-content: space-between;align-items:end ; flex: 1; padding: 0px 15px 0px 15px;border-top-left-radius: 20px;margin-top: 25px;">
+              <h2 style="font-size: 20px; font-family: didot ;margin: 0px;font-weight: 900;">Chats</h2>
+              <i style="font-size: 16px;cursor: pointer;" class="bi bi-pencil-square"></i>
+            </div>
+            <div
+              style="display: flex;flex: 2;align-items: center; justify-content: center;padding-left: 15px; padding-right: 15px;">
+              <div style="margin-top: 10px; border: none; border-radius: 20px;background-color: rgba(126, 109, 132, 0);"
+                class="card">
+                <div class="input-box">
+                  <input
+                    style="border: none; width: 190px;height: 0px;; background-color: rgba(255, 255, 255, 0.3); border-radius: 20px;"
+                    placeholder="Search" type="text" class="form-control">
+                  <div id="sfondoicon2"><i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            style="display: flex; ; flex: 6;border-bottom-left-radius: 20px;border-right: solid rgba(255, 255, 255, 0.4);flex-direction: column; overflow-y: scroll;">
+            <div id="utente" style="display: block;">
+              <div style="border-bottom: solid rgba(255, 255, 255, 0.4); cursor: pointer; " class="utente">
+                <div style="display: flex; justify-content: center; align-items: center;flex: 3;"> <img
+                    style="border-radius: 100%; border:solid white 2px" src="./imagini/girl.png" height="50px"
+                    width="50px" alt="">
+                </div>
+                <div id="online" style="position: relative;top: 40px;right: 20px;width: 1px;height: 1px;"><img
+                    src="./imagini/online.png" height="10px" width="10px" alt=""></div>
+                <div
+                  style="display: flex; justify-content: center; align-items: start;flex: 7; flex-direction: column;">
+                  <h1 style="font-size: 15px;margin: 0;font-family: didot;font-weight: 900;">Linda Lynn &nbsp;&nbsp;
+                    <span style="color: rgb(12, 117, 229);"> &#8226; </span>
+                  </h1>
+                  <p style="font-size: 12px;margin: 0;font-weight: 800;font-family:didot;color: rgba(0, 0, 0, 0.8)">
+                    Linda is typing...</p>
+                </div>
+              </div>
+            </div>
+            <div id="utente" style="display: block;">
+              <div style="border-bottom: solid rgba(255, 255, 255, 0.4); cursor: pointer;" class="utente">
+                <div style="display: flex; justify-content: center; align-items: center;flex: 3;"> <img
+                    style="border-radius: 100%; border:solid white 2px" src="./imagini/boy.png" height="50px"
+                    width="50px" alt=""></div>
+                <div
+                  style="display: flex; justify-content: center; align-items: start;flex: 7; flex-direction: column;">
+                  <h1 style="font-size: 15px;margin: 0;font-family: didot;font-weight: 900;">Keri Varga &nbsp;&nbsp;
+                    <span style="color: rgb(12, 117, 229);"> &#8226; </span>
+                  </h1>
+                  <p style="font-size: 12px;margin: 0;font-weight: 800; font-family: didot;color: rgba(0, 0, 0, 0.8)">
+                    Nothing special.😜😜</p>
+                </div>
+              </div>
+            </div>
+            <div id="utente" style="display: block;">
+              <div style="border-bottom: solid rgba(255, 255, 255, 0.4); cursor: pointer; " class="utente">
+                <div style="display: flex; justify-content: center; align-items: center;flex: 3;"> <img
+                    style="border-radius: 100%; border:solid white 2px" src="./imagini/girl2.png" height="50px"
+                    width="50px" alt=""></div>
+                <div id="online" style="position: relative;top: 40px;right: 20px;width: 1px;height: 1px;"><img
+                    src="./imagini/online.png" height="10px" width="10px" alt=""></div>
+                <div
+                  style="display: flex; justify-content: center; align-items: start;flex: 7; flex-direction: column;">
+                  <h1 style="font-size: 15px;margin: 0;font-family: didot;font-weight: 900;">Kristin Watson</h1>
+                  <p style="font-size: 12px;margin: 0;font-family: Cormorant Garamond;color: rgba(0, 0, 0, 0.5)">Hey
+                    there!😤 </p>
+                </div>
+              </div>
+            </div>
+            <div id="utente" style="display: block;">
+              <div style="border-bottom: solid rgba(255, 255, 255, 0.4); cursor: pointer;" class="utente">
+                <div style="display: flex; justify-content: center; align-items: center;flex: 3;"> <img
+                    style="border-radius: 100%; border:solid white 2px" src="./imagini/boy2.png" height="50px"
+                    width="50px" alt="">
+                </div>
+                <div id="online" style="position: relative;top: 40px;right: 20px;width: 1px;height: 1px;"><img
+                    src="./imagini/online.png" height="10px" width="10px" alt=""></div>
+                <div
+                  style="display: flex; justify-content: center; align-items: start;flex: 7; flex-direction: column;">
+                  <h1 style="font-size: 15px;margin: 0;font-family: didot;font-weight: 900;">Court Henry &nbsp;&nbsp;
+                    <span style="color: rgb(12, 117, 229);"> &#8226; </span>
+                  </h1>
+                  <p style="font-size: 12px;margin: 0;font-weight: 600;color: rgba(0, 0, 0, 0.8)">What's up?!.🤟</p>
+                </div>
+              </div>
+            </div>
+            <div id="utente" style="display: block;">
+              <div style="border-bottom: solid rgba(255, 255, 255, 0.4); cursor: pointer; " class="utente">
+                <div style="display: flex; justify-content: center; align-items: center;flex: 3;"> <img
+                    style="border-radius: 100%; border:solid white 2px" src="./imagini/girl3.png" height="50px"
+                    width="50px" alt=""></div>
+                <div
+                  style="display: flex; justify-content: center; align-items: start;flex: 7; flex-direction: column;">
+                  <h1 style="font-size: 15px;margin: 0;font-family: didot;font-weight: 800;">Esther Howard</h1>
+                  <p style="font-size: 12px;margin: 0; font-family: Cormorant Garamond;color: rgba(0, 0, 0, 0.5)">I love
+                    you!❤️</p>
+                </div>
+              </div>
+            </div>
+            <div id="utente" style="display: block;">
+              <div style=" cursor: pointer;" class="utente">
+                <div style="display: flex; justify-content: center; align-items: center;flex: 3;"> <img
+                    style="border-radius: 100%; border:solid white 2px" src="./imagini/boy3.png" height="50px"
+                    width="50px" alt=""></div>
+                <div
+                  style="display: flex; justify-content: center; align-items: start;flex: 7; flex-direction: column;">
+                  <h1 style="font-size: 15px;margin: 0;font-family: didot;font-weight: 800;">Darrell</h1>
+                  <p style="font-size: 12px;margin: 0;font-family: Cormorant Garamond;color: rgba(0, 0, 0, 0.5)">Ok.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column;width:  100%;">
+          <div
+            style=" display: flex; flex: 0.4;border-top-right-radius: 20px; align-items: center; justify-content: space-between; padding: 5px 15px 5px 15px;border-bottom: solid rgba(255, 255, 255, 0.4)">
+            <div style="display: block;">
+              <div style="cursor: pointer; " class="utente">
+                <div style="display: flex; justify-content: center; align-items: center;"> <img
+                    style="border-radius: 100%; border:solid white 2px" src="./imagini/girl.png" height="50px"
+                    width="50px" alt="">
+                </div>
+                <div id="online" style="position: relative;top: 42px;right: 13px;width: 1px;height: 1px;"><img
+                    src="./imagini/online.png" height="10px" width="10px" alt=""></div>
+                <div
+                  style="display: flex; justify-content: center; align-items: start; flex-direction: column;left: 15px;position: relative;">
+                  <h1 style="font-size: 15px;margin: 0;font-family: didot;font-weight: 900;">Linda Lynn &nbsp;&nbsp;
+                  </h1>
+                  <p style="font-size: 12px;margin: 0;color: rgba(0, 0, 0, 0.5);">Active now</p>
+                </div>
+              </div>
+            </div>
+            <div style="display: flex;">
+              <div id="sfondoicon2"><i style="padding: 6px;" class="bi bi-telephone"></i></div>
+              <div id="sfondoicon2"><i style="padding: 6px;" class="bi bi-camera-video"></i></div>
+              <div id="sfondoicon2"><i style="padding: 6px;" class="bi bi-info-circle"></i></div>
+            </div>
+          </div>
+          <div style="display: flex; flex: 10; flex-direction: column;overflow-y: scroll;">
+            <div style="display: block;">
+              <div
+                style="background-color: rgba(255, 255, 255, 0.3);display: flex;justify-content: start; align-items: start;padding: 17px;width: 30vw;flex-direction: column;margin: 10px; border-top-right-radius: 20px;border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;">
+                <p style="margin: 0px; font-size: 13px;">Hi! Everything's fine :D Do you remeber that is Kate birthday
+                  next well?🎂</p>
+                <p style="margin: 0px; font-size: 10px;color: gray;">5 min ago</p>
+              </div>
+            </div>
+            <div style="display: block;">
+              <div style="display: flex; justify-content: end;">
+                <div
+                  style="background-color: rgba(255, 255, 255, 0.8);display: flex;justify-content: start; align-items: end;padding: 17px;width: 30vw;flex-direction: column;margin: 10px; border-top-left-radius: 20px;border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;">
+                  <p style="margin: 0px; font-size: 13px;">Oh, yeah! I wanna ask you if will going to do a surprise
+                    party</p>
+                  <p style="margin: 0px; font-size: 10px;color: gray;">2 hours ago</p>
+                </div>
+              </div>
+            </div>
+            <div style="display: block;">
+              <div
+                style="background-color: rgba(255, 255, 255, 0.3);display: flex;justify-content: start; align-items: start;padding: 17px;width: 30vw;flex-direction: column;margin: 10px; border-top-right-radius: 20px;border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;">
+                <p style="margin: 0px; font-size: 13px;">Hm, sound a good idea! But on monday, Kate will have a vacation
+                  in mountains for 4 days.... what about sunday?</p>
+                <p style="margin: 0px; font-size: 10px;color: gray;">5 min ago</p>
+              </div>
+            </div>
+            <div style="display: block;">
+              <div
+                style="background-color: rgba(255, 255, 255, 0.3);display: flex;justify-content: start; align-items: start;padding: 17px;width: 30vw;flex-direction: column;margin: 10px; border-top-right-radius: 20px;border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;">
+                <p style="margin: 0px; font-size: 13px;">Ican bring her favorite cake, it will be cool!🎉</p>
+                <p style="margin: 0px; font-size: 10px;color: gray;">5 min ago</p>
+              </div>
+            </div>
+            <div style="display: block;">
+              <div style="display: flex; justify-content: end;">
+                <div
+                  style="background-color: rgba(255, 255, 255, 0.8);display: flex;justify-content: start; align-items: end;padding: 17px;width: 30vw;flex-direction: column;margin: 10px; border-top-left-radius: 20px;border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;">
+                  <p style="margin: 0px; font-size: 13px;">Yea, I agree! Ok than, I will send some invitations!🤌🏼</p>
+                  <p style="margin: 0px; font-size: 10px;color: gray;">2 hours ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            style=" display: flex; flex: 1.0;border-bottom-right-radius: 20px; align-items: center; padding: 8px; justify-content: space-evenly;border-top: solid rgba(255, 255, 255, 0.4)">
+            <div id="sfondoicon2"><i style="padding: 6px;" class="bi bi-image-fill"></i> </div>
+            <div id="sfondoicon2"><i style="padding: 6px;" class="bi bi-camera"></i> </div>
+            <div id="sfondoicon2"> <i style="padding: 6px;" class="bi bi-paperclip"></i></div>
+            <div id="sfondoicon2"> <i style="padding: 6px;" class="bi bi-mic"></i></div>
+            <div style="display: flex;">
+              <textarea
+                style="background-color: rgba(255, 255, 255, 0.3);border: none; resize: none;font-size: 12px; padding: 8px 10px;font-family: didot; border-radius: 20px;"
+                id="freeform" name="freeform" rows="1" cols="57">Tipe here...
+              </textarea>
+              <div style="position: relative;right: 24px; top: 4px; padding: 0px;" id="sfondoicon2"><i
+                  class="bi bi-emoji-smile"></i>
+              </div>
+              <div style="display: flex; justify-content: center;align-items: center;" id="sfondoicon2"><i
+                  style="padding: 3px ;padding-right: 14px;" class="bi bi-send"></i> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mobile">
+      <div style="display: flex;flex: 1.8; border-radius: 20px; align-items: center; justify-content: space-evenly;">
+        <div style="font-size: 20px;" id="sfondoicon2"><i class="bi bi-arrow-left-circle"></i></div>
+        <div style="display: block; margin-right: 25px;">
+          <div style="cursor: pointer; " class="utente">
+            <div style="display: flex; justify-content: center; align-items: center;"> <img
+                style="border-radius: 100%; border:solid white 2px" src="./imagini/boy.png" height="50px" width="50px"
+                alt="">
+            </div>
+            <div id="online" style="position: relative;top: 42px;right: 13px;width: 1px;height: 1px;"><img
+                src="./imagini/online blu.png" style="border:solid white 0.7px ;border-radius: 100%;" height="10px"
+                width="10px" alt=""></div>
+            <div
+              style="display: flex; justify-content: center; align-items: start; flex-direction: column;left: 15px;position: relative;">
+              <h1 style="font-size: 15px;margin: 0;font-family: didot;font-weight: 900;">Keri Varga &nbsp;&nbsp;
+              </h1>
+              <p style="font-size: 12px;margin: 0;color: rgba(0, 0, 0, 0.5);">Online</p>
+            </div>
+          </div>
+        </div>
+        <div style="font-size: 20px;" id="sfondoicon2"> <i class="bi bi-three-dots-vertical"></i></div>
+      </div>
+      <div style=" display: flex;flex: 8.2; border-radius: 20px; flex-direction: column; height: 700px;">
+        <div
+          style=" background-color: rgba(255, 255, 255, 0.3); flex: 8.1;border-top-right-radius: 20px;border-top-left-radius: 20px;overflow-y: scroll;">
+          <div style="display: flex; flex: 10; flex-direction: column;overflow-y: scroll;">
+            <div style="display: block; ">
+              <div
+                style="background-color: rgba(255, 255, 255, 0.3);display: flex;justify-content: start; align-items: start;padding: 15px;width: 14vw;flex-direction: column;margin: 10px; border-top-right-radius: 20px;border-bottom-right-radius: 20px;border-top-left-radius: 20px;">
+                <p style="margin: 0px; font-size: 13px;">Hi! Everything's fine :D Do you remeber that is Kate birthday
+                  next well?🎂</p>
+                <p style="margin: 0px; font-size: 10px;color: gray;">5 min ago</p>
+              </div>
+            </div>
+            <div style="display: block;">
+              <div style="display: flex; justify-content: end;">
+                <div
+                  style="background-color: rgba(84, 139, 247, 1);display: flex;justify-content: start; align-items: end;padding: 15px 5px 15px 5px;flex-direction: column;margin: 10px; border-top-left-radius: 20px;border-top-right-radius: 20px;border-bottom-left-radius: 20px;">
+                  <div
+                    style="display: flex; justify-content: center;align-items: center;padding-left: 5px;padding-right: 5px;margin-left: 5px;  ">
+                    <div style="padding-left: 5px; padding-right: 5px;"> <i style="font-size: 1.7vw;color: white;"
+                        class="bi bi-folder"></i></div>
+                    <div style="padding-left: 5px; padding-right: 5px;">
+                      <p style="margin: 0px; font-size: 13px;color: white;">Portofino.pdf <br><span
+                          style="font-size: 10px; font-weight: 800;">2 Mb</span></p>
+                    </div>
+                    <div style="padding-left: 55px; padding-right: 5px;"><i style="font-size: 1.6vw;color: white;"
+                        class="bi bi-download"></i></div>
+                  </div>
+                  <p style="margin: 0px; font-size: 10px;color: white;">2 hours ago</p>
+                </div>
+              </div>
+            </div>
+            <div style="display: block;">
+              <div
+                style="background-color: rgba(255, 255, 255, 0.3);display: flex;justify-content: start; align-items: start;padding: 15px;width: 14vw;flex-direction: column;margin: 10px; border-top-right-radius: 20px;border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;">
+                <p style="margin: 0px; font-size: 13px;">Hm, sound a good idea! But on monday, Kate will have a vacation
+                  in mountains for 4 days</p>
+                <p style="margin: 0px; font-size: 10px;color: gray;">5 min ago</p>
+              </div>
+            </div>
+            <div style="display: block;">
+              <div div style="display: flex; justify-content: end;">
+                <div
+                  style="background-color: rgba(255, 255, 255, 0.8);display: flex;justify-content: start; align-items: start;padding: 15px;width: 14vw;flex-direction: column;margin: 10px; border-top-right-radius: 20px;border-top-left-radius: 20px;border-bottom-left-radius: 20px;">
+                  <p style="margin: 0px; font-size: 13px;">Hm, sound a good idea! But on monday, Kate will have a
+                    vacation.</p>
+                  <p style="margin: 0px; font-size: 10px;color: gray;">5 min ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style=" flex: 1.2; background-color: rgba(255, 255, 255, 0.3) ; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; display: flex; justify-content: center;align-items: center;border-top: solid rgba(255, 255, 255, 0.4);">
+          <div style="display: flex;  align-items: center;height: 0px;">
+            <textarea
+              style="background-color: rgba(255, 255, 255, 0.3);border: none; resize: none;font-size: 12px; padding: 8px 10px;font-family: didot; border-radius: 20px;height: 40px;display: flex; justify-content: center;"
+              id="freeform" name="freeform" rows="1" cols="32">
+          </textarea>
+            <div style="position: relative;right: 35px; top: 10px; padding: 0px; width: 0px" id="sfondoicon2"><i
+                class="bi bi-send"></i>
+              <div style="position: relative;right: 205px; bottom: 23px; padding: 0px; width: 0px" id="sfondoicon2"><i
+                  class="bi bi-plus-circle"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+
+</html>
